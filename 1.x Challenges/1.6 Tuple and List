@@ -1,0 +1,18 @@
+from asyncore import loop
+
+#variable to input data and add a comma 
+x =(input("What are you three favorite numbers? Enter with a comma - ex. 1,2,3: ").split(','))
+#print as a list
+print(list(x))
+
+#create the loop to bring back inputed values
+loop(x)
+#print tuple
+print(tuple(x))
+
+####Solution: 
+values = input("Input some comma seprated numbers : ")
+list = values.split(",")
+tuple = tuple(list)
+print('List : ',list)
+print('Tuple : ',tuple)####
